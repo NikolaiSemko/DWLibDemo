@@ -69,7 +69,7 @@ onload = () => {
     txt[i] = new TextLine(wa.win[i].svg, 50, 10, "Hello World!", 5);
     //else sl[i] = new SliderSvg1(win, wa.win[i].svg.id, "slider0" + i, 30, 60, 60, 2, 0, 300, 2, 150);
   }
-  ch[total] = new CheckBox(win.svg, 2, 2, 2, false, reDrawWin, "Animation", 5);
+  ch[total] = new CheckBox(win.svg, 2, 2, 2, true, reDrawWin, "Animation", 5);
   for (let i = 0; i < total; i++) {
     let target = "#" + wa.win[i].svg.id;
     anm[i] = anime({
