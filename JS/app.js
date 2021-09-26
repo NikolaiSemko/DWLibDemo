@@ -35,10 +35,12 @@ function reDrawWin() {
   //InfoChannels(win.w, win.h, 0.0, 0.06, 0.44);
   //win.mouse.move = false;
   //win.wheel = 0;
+  if (ch[total] != undefined) {
   if (ch[total].val) for (let i = 0; i < total; i++) anm[i].play();
   else for (let i = 0; i < total; i++) {
     anm[i].pause();
     wa.win[i].drawSVG(true);
+  }
   }
 }
 function Slw(i) {
