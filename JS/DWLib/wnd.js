@@ -1,3 +1,4 @@
+import { TextLine } from "./SvgText.js";
 export default class WndArr {
   constructor() {
     this.win = [];
@@ -106,7 +107,7 @@ export default class WndArr {
   }
 }
 class WND {
-  constructor(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move = true, resize = true, svg = true, shadow = false, opacity = 1.0) {
+  constructor(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move = true, resize = true, shadow = false, opacity = 1.0) {
     this.parent = parent;
     //console.log(parent);
     this.title = title;
@@ -195,7 +196,7 @@ class WND {
       //this.svg.x.baseVal.valueAsString =
       this.svg.setAttributeNS(null, "x", (this.x * 100).toFixed(2) + "%");
       this.svg.setAttributeNS(null, "y", (this.y * 100).toFixed(2) + "%");
-      this.text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      //this.text = document.createElementNS("http://www.w3.org/2000/svg", "text");
       if (this.opacity < 1.0) this.rect.setAttributeNS(null, "fill-opacity", this.opacity);
       this.rect.setAttributeNS(null, "x", "0");
       this.rect.setAttributeNS(null, "y", "0");
@@ -210,16 +211,19 @@ class WND {
       }
       this.rect.setAttributeNS(null, "id", this.title + "j");
       if (this.shadow) this.rect.setAttributeNS(null, "filter", "url(#shadow)");
-      this.text.setAttributeNS(null, "x", (h / 2).toFixed(2));
-      this.text.setAttributeNS(null, "y", (h * 0.8).toFixed(2));
-      this.text.setAttributeNS(null, "fill", this.clr_text_title);
+      //this.text.setAttributeNS(null, "x", (h / 2).toFixed(2));
+      //this.text.setAttributeNS(null, "y", (h * 0.8).toFixed(2));
+      //this.text.setAttributeNS(null, "fill", this.clr_text_title);
 
       //this.text.setAttributeNS(null, 'font-family', "Roboto-Light");
       //this.text.setAttributeNS(null, "id", this.title + "t");
-      this.text.textContent = this.title;
-      this.text.style.userSelect = "none";
+      //this.text.textContent = this.title;
+      //this.text.style.userSelect = "none";
       this.svg.appendChild(this.rect);
-      this.svg.appendChild(this.text);
+      if (this.title != "") {
+        this.text = new TextLine(this.svg, 1, 3, this.title, 3, "start", "#FFF");
+      }
+      //this.svg.appendChild(this.text);
     }
     if (move) {
       this.svg.setAttributeNS(null, "x", (this.x * 100).toFixed(2) + "%");
