@@ -11,8 +11,8 @@ export default class WndArr {
           }, {capture: true});*/
     //this.txtcol = new TagCollection('div', 'wt');
   }
-  newWin(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move = true, resize = true, svg = true, shadow = false) {
-    this.win[this.N] = new WND(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move, resize, svg, shadow);
+  newWin(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move = true, resize = true, shadow = false) {
+    this.win[this.N] = new WND(parent, title, x, y, w, h, r, clr, clr_text, clr_title, clr_text_title, move, resize, shadow);
 
     //let wnd = this.win[this.N];
     let h0 = 0.025;
