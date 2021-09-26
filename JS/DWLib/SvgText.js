@@ -39,7 +39,7 @@ export class TextLine {
       this.text.style.textAnchor = this.anchor;
       this.text.setAttributeNS(null, "x", "0%");
       this.text.setAttributeNS(null, "y", "95%");
-      this.text.style.fontSize = "100";
+      this.text.style.fontSize = "95px";
       //this.text.x.baseVal.valueAsString = "5%";
       //this.text.y.baseVal.valueAsString = "80%";
       //this.text.setAttributeNS(null, "x", this.x + "%");
