@@ -221,7 +221,7 @@ class WND {
       //this.text.style.userSelect = "none";
       this.svg.appendChild(this.rect);
       if (this.title != "") {
-        this.text = new TextLine(this.svg, 1, 3, this.title, 3, "start", "#FFF");
+        this.text = new TextLine(this.svg, 1, 2.5, this.title, 3, "start", "#FFF");
       }
       //this.svg.appendChild(this.text);
     }
