@@ -42,6 +42,8 @@ function reDrawWin() {
 }
 function Slw(i) {
   ch[i].newX(sl[i].val);
+  txt[i].size = Math.sqrt(sl[i].val*5);
+  txt[i].draw();
 }
 
 // ******************************************************************************************
