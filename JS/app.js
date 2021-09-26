@@ -63,7 +63,7 @@ onload = () => {
     let clr2 = "#" + Math.floor(256 + Math.random() * 3839).toString(16) + "C";
     let par = win.svg;
     //if (i > 0) par = wa.win[i - 1].svg;
-    wa.newWin(par, "Some_Title_" + i, x, y, w, h, 0.5, clr1, "#FF0", clr2, "#FFF", true, true, true, false);
+    wa.newWin(par, "Some_Title_" + i, x, y, w, h, 0.5, clr1, "#FF0", clr2, "#FFF", true, true, false);
 
     //wa.newWin({title: ("Some Title " + i), x: x, y: y, w: w, h: h, r: 0.5, clr: clr1, clr_text: '#FF0', clr_title: clr2, clr_text_title: '#FFF', move: true, resize: true, svg: true, shadow: false});
     logo[i] = new SvgImage(wa.win[i].svg, "youtube_logo", svg.youtube_logo, i, 70, 5, 50);
