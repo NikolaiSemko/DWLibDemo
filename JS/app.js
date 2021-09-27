@@ -15,7 +15,7 @@ let sw2 = [];
 let ch = [];
 let anm = [];
 let txt = [];
-let txt1, txt2, txt3, txt4;
+let txt1, txt2, txt3, txt4, txt5, txt6;
 //let sl;
 export let win;
 let clr_b = "#118";
@@ -55,7 +55,9 @@ onload = () => {
   txt1 = new TextLine(win.svg, 50, 2, "Hello World!", 2); 
   txt2 = new TextLine(win.svg, 70, 2, "Width = " + win.w, 3); 
   txt3 = new TextLine(win.svg, 70, 7, "Height = " + win.h, 3); 
-  txt4 = new TextLine(win.svg, 70, 12, "Scale = " + win.scale, 3);
+  txt5 = new TextLine(win.svg, 70, 12, "Scale = " + win.scale, 3);
+   txt4 = new TextLine(win.svg, 70, 17, "H inner = " + window.innerHeight, 3);
+   txt4 = new TextLine(win.svg, 70, 22, "H offset = " + window.offsetHeight, 3);
   wa = new WndArr();
   for (let i = 0; i < total; i++) {
     let h = 0.1 + Math.random() / 3;
