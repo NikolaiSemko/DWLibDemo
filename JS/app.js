@@ -71,8 +71,8 @@ onload = () => {
     wa.newWin(par, "Some_Title_" + i, x, y, w, h, 0.5, clr1, "#FF0", clr2, "#FFF", true, true, false);
 
     //wa.newWin({title: ("Some Title " + i), x: x, y: y, w: w, h: h, r: 0.5, clr: clr1, clr_text: '#FF0', clr_title: clr2, clr_text_title: '#FFF', move: true, resize: true, svg: true, shadow: false});
-    if (i==total-1) logo[i] = new SvgImage(wa.win[i].svg, "youtube_logo", svg.youtube_logo, i, 70, 5, 50);
-    else logo[i] = new SvgImage(wa.win[i].svg, "youtube_logo1", svg.youtube_logo1, i, 30, 5, 100);
+    if (i==total-1) logo[i] = new SvgImage(wa.win[i].svg, "youtube_logo", svg.youtube_logo, i, 0, 5, 95);
+    else logo[i] = new SvgImage(wa.win[i].svg, "youtube_logo1", svg.youtube_logo1, i, 70, 5, 50);
     sl[i] = new SliderSvg(wa.win[i].svg, 30, 60, 60, 1.5, 0, 100, 2, 5, Slw, i);
     sw[i] = new Switch(wa.win[i].svg, 5, 20, 2, 2.8, Math.random() < 0.5); //,"#58A","#777","#68C","#888");
     sw2[i] = new Switch(wa.win[i].svg, 4.5, 33, 2, 4.4, Math.random() < 0.5);
