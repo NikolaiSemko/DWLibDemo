@@ -6,7 +6,7 @@ import { Switch } from "./DWLib/Switch.js";
 import { CheckBox } from "./DWLib/Check.js";
 import { TextLine } from "./DWLib/SvgText.js";
 
-let total = 50;
+let total = 30;
 let wa;
 let sl = [];
 let logo = [];
